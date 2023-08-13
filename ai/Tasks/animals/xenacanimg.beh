@@ -1,0 +1,1962 @@
+<BehaviorSets>
+<!--Wander behavior sets for randomized wandering-->
+   <WanderSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf_Fast weight="25"/>
+               <WanderSurf_Med weight="25"/>
+               <WanderSurf_Slow weight="25"/>
+               <WanderSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSurf>
+   <WanderSurf_Fast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Fast>
+   <WanderSurf_Med>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Med>
+   <WanderSurf_Slow>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Slow>
+   <WanderSurf_Glide>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSurf_Glide>
+   <WanderSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSub_Fast weight="25"/>
+               <WanderSub_Med weight="25"/>
+               <WanderSub_Slow weight="25"/>
+               <WanderSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderSub>
+   <WanderSub_Fast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Fast>
+   <WanderSub_Med>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="medium" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Med>
+   <WanderSub_Slow>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Slow>
+   <WanderSub_Glide>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="glide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderSub_Glide>
+   <WanderBolt>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderBoltSurf weight="25"/>
+               <WanderBoltSub weight="75"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderBolt>
+   <WanderBoltSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Surface"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderBoltSurf weight="75"/>
+               <WanderBoltSurf_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderBoltSurf>
+   <WanderBoltSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="6" avoidLand="true" locoSpeed="bolt" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderBoltSurf>
+   <WanderBoltSurf_Glide>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="6" avoidLand="true" locoSpeed="boltglide" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderBoltSurf_Glide>
+   <WanderBoltSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderBoltSub_Fast weight="75"/>
+               <WanderBoltSub_Glide weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </WanderBoltSub>
+   <WanderBoltSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="6" avoidLand="true" locoSpeed="bolt" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderBoltSub>
+   <WanderBoltSub_Glide>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="3" maxPlayTime="6" avoidLand="true" locoSpeed="boltglide" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderBoltSub_Glide>
+   <WanderRest>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderRest>
+   <WanderStalk>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Submerge"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="2" maxPlayTime="4" avoidLand="true" locoSpeed="stalk" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </WanderStalk>
+   
+<!-- Begin Default Behaviors Section -->
+<!-- Begin Default Behavior Branches -->
+   <Default_Happy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Pos_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHappy" priority="0" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultHappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Happy>
+   <Default_VeryHappy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="DPos_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultHappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryHappy>
+   <Default_Unhappy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_2">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="90"/>
+               <DefaultUnhappy weight="10"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_Unhappy>
+   <Default_VeryUnhappy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehViewEvent viewKey="Neg_3">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehRandomSet>
+            <randomSets>
+               <DefaultSwim weight="80"/>
+               <DefaultUnhappy weight="20"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Default_VeryUnhappy>
+<!-- End Default Behavior Branches -->
+<!-- Begin Default Behavior Leaves -->
+   <DefaultSwim>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="70"/>
+               <WanderSub weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultSwim>
+   <DefaultSwimSurface>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSurf"/>
+      </behaviors>
+   </DefaultSwimSurface>
+   <DefaultSwimSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingAround"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="WanderSub"/>
+      </behaviors>
+   </DefaultSwimSub>
+   <DefaultLie>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub_Slow"/>
+      </behaviors>
+   </DefaultLie>
+   <DefaultRest>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Resting"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Submerge"/>
+         <BFBehPlaySet behSet="WanderSub_Glide"/>
+      </behaviors>
+   </DefaultRest>
+   <DefaultHappy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Wandering"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteHappy"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet>
+            <randomSets>
+               <WanderSurf weight="70"/>
+               <WanderSub weight="30"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefaultHappy>
+   <DefaultUnhappy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Bolt weight="50"/>
+               <Frenzy weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTEmoticonInfo emoticonName="EmoteAngry"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </DefaultUnhappy>
+<!-- End Default Behavior Leaves -->
+<!-- End Default Behaviors Section -->
+   <Idle>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet>
+            <behaviorTable>
+               <Swim behSet="DefaultSwimSurface"/>
+               <SwimSub behSet="DefaultSwimSub"/>
+               <default behSet="DefaultSwimSub"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Idle>
+   <TreadWater_Idle>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="Swim_Idle"/>
+      </behaviors>
+   </TreadWater_Idle>
+   <Stand_Idle>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate interruptFlag="true" targetAnim="OnLand_Idle"/>
+      </behaviors>
+   </Stand_Idle>
+   <FailureSet>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SurfaceFailure"/>
+               <underwater behSet="SubFailure"/>
+               <default behSet="SubFailure"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </FailureSet>
+   <SurfaceFailure>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SurfaceFailure>
+   <SubFailure>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+            <BFBehPlaySet behSet="Bite"/>
+      </behaviors>
+   </SubFailure>
+   <Think>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="Idle"/>
+               <default behSet="Idle"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </Think>
+   <Investigate>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Investigate>
+   <InvestigateLarge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehMove pathRadius="10" closestApproach="true"/>
+         <ZTBehViewEvent viewKey="Pos_2"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:LookAt" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFaceTarget/>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </InvestigateLarge>
+   <Sick>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" locoSpeed="slow" avoidLand="true"/>
+      </behaviors>
+   </Sick>
+   <VerySick>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" locoSpeed="slow" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </VerySick>
+   <Die_OldAge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDied" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_OldAge>
+   <Die_Sick>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Dying_Sick"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPlaySet behSet="Dying"/>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Sick>
+   <Dying>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="OnLand"/>
+               <water behSet="WanderSurf_Slow"/>
+               <underwater behSet="WanderSub_Slow"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Dying>
+   <Die_Fight>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+	 <ZTBehMorph morphEntity="subject" morphTargetEntityType="Carcass_Chum_mm" NameIt="true"/>
+      </behaviors>
+   </Die_Fight>
+   <Die_Beached>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+	 <BFBehKill killSubject="true" fadeOutPeriod="1"/>
+      </behaviors>
+   </Die_Beached>   
+   <Rendezvous>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit/>
+      </behaviors>
+   </Rendezvous>
+   <SyncSwimLead>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet loopFlag="true">
+            <randomSets>
+               <LeadSurf_Fast weight="50"/>
+               <LeadSub_Fast weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </SyncSwimLead>
+   <LeadSurf_Fast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="5" maxPlayTime="10" avoidLand="true" locoSpeed="fast" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </LeadSurf_Fast>
+   <LeadSub_Fast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="5" maxPlayTime="10" avoidLand="true" locoSpeed="fast" minDepth="2" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </LeadSub_Fast>
+   <SyncSwimFollow>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:SwimmingWith" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SyncSwimFollow>
+   <ReproductionSwimLead>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehRandomSet loopFlag="true">
+            <randomSets>
+               <LeadSurf_Fast weight="50"/>
+               <LeadSub_Fast weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </ReproductionSwimLead>
+   <ReproductionSwimFollow>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Mating" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehFollowEntity locoSpeed="fast" targetNode="Node_Follow" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </ReproductionSwimFollow>
+   <WaitReproduction>
+      <subjects>
+         <xenacanimg_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:WaitMate" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="10" maxPlayTime="10" avoidLand="true" locoSpeed="slow" minDepth="2" maxDepth="10"/>
+      </behaviors>
+   </WaitReproduction>
+   <Birth>
+      <subjects>
+         <xenacanimg_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet minPlays="2" maxPlays="4">
+            <randomSets>
+               <SpawnF weight="50"/>
+               <SpawnM weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Birth>
+   <SpawnF>
+      <subjects>
+         <xenacanimg_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="xenacanimg_Young_F" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnF>
+   <SpawnM>
+      <subjects>
+         <xenacanimg_Adult_F/>
+      </subjects>
+      <behaviors>
+         <BFBehSpawn spawnEntity="xenacanimg_Young_M" spawnRelation="child" subjectNode="Floor" fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnInTA="true"/>
+         <BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth"/>
+      </behaviors>
+   </SpawnM>
+   <Surface_Submerge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet switch="false">
+            <behaviorTable>
+               <water behSet="Submerge"/>
+               <underwater behSet="Surface"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Surface_Submerge>
+   <Submerge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Submerging"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="3" maxDepth="10"/>
+      </behaviors>
+   </Submerge>
+   <Surface>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Surfacing"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehWander minPlayTime="7" maxPlayTime="15" avoidLand="true" minDepth="0" maxDepth="0"/>
+      </behaviors>
+   </Surface>
+   <Eat>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <EatNibble weight="25"/>
+               <EatTear weight="50"/>
+               <EatVoracious weight="25"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Eat>
+   <EatNibble>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+	 <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatNibble" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </EatNibble>
+   <EatTear>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+	 <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </EatTear>
+   <EatVoracious>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+	 <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatVoracious" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </EatVoracious>
+   <Chew>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </Chew>
+   <Breach>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BreachCharge"/>
+               <underwater behSet="BreachChargeSub"/>
+               <default behSet="BreachChargeSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Breach>
+   <BreachCharge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </BreachCharge>
+   <BreachChargeSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </BreachChargeSub>
+   <Bite>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteSurf"/>
+               <underwater behSet="BiteSub"/>
+               <default behSet="BiteSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Bite>
+   <BiteSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Bite"/>
+      </behaviors>
+   </BiteSurf>
+   <BiteSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </BiteSub>
+   <BiteLunge>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteLungeSurf"/>
+               <underwater behSet="BiteLungeSub"/>
+               <default behSet="BiteLungeSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BiteLunge>
+   <BiteLungeSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_BiteLunge"/>
+      </behaviors>
+   </BiteLungeSurf>
+   <BiteLungeSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BiteLunge"/>
+      </behaviors>
+   </BiteLungeSub>
+   <Frenzy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="FrenzySurf"/>
+               <underwater behSet="FrenzySub"/>
+               <default behSet="FrenzySub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Frenzy>
+   <FrenzySurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Charge_FrenzyA"/>
+      </behaviors>
+   </FrenzySurf>
+   <FrenzySub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="ChargeSub_FrenzyA"/>
+      </behaviors>
+   </FrenzySub>
+   <InvestigateBite>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="InvestigateBiteSurf"/>
+               <underwater behSet="InvestigateBiteSub"/>
+               <default behSet="InvestigateBiteSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </InvestigateBite>
+   <InvestigateBiteSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_InvestigateBite"/>
+      </behaviors>
+   </InvestigateBiteSurf>
+   <InvestigateBiteSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_InvestigateBite"/>
+      </behaviors>
+   </InvestigateBiteSub>
+   <DefensivePosture>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="WanderStalk"/>
+      </behaviors>
+   </DefensivePosture>
+   <RubObject>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="RubObjectSurf"/>
+               <underwater behSet="RubObjectSub"/>
+               <default behSet="RubObjectSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </RubObject>
+   <RubObjectSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_RubObject"/>
+      </behaviors>
+   </RubObjectSurf>
+   <RubObjectSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_RubObject"/>
+      </behaviors>
+   </RubObjectSub>
+   <ChargeChomp>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="ChargeChompSurf"/>
+               <underwater behSet="ChargeChompSub"/>
+               <default behSet="ChargeChompSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </ChargeChomp>
+   <ChargeChompSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Charge_ChompA weight="50"/>
+               <Charge_ChompB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ChargeChompSurf>
+   <ChargeChompSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <ChargeSub_ChompA weight="50"/>
+               <ChargeSub_ChompB weight="50"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </ChargeChompSub>
+   <ShakeObject>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Chew"/>
+      </behaviors>
+   </ShakeObject>
+   <Nibble>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="NibbleSurf"/>
+               <underwater behSet="NibbleSub"/>
+               <default behSet="NibbleSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Nibble>
+   <NibbleSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_Nibble"/>
+      </behaviors>
+   </NibbleSurf>
+   <NibbleSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Nibble"/>
+      </behaviors>
+   </NibbleSub>
+   <MouthShark>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="MouthSharkSurf"/>
+               <underwater behSet="MouthSharkSub"/>
+               <default behSet="MouthSharkSub"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </MouthShark>
+   <MouthSharkSurf>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_MouthShark"/>
+      </behaviors>
+   </MouthSharkSurf>
+   <MouthSharkSub>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_MouthShark"/>
+      </behaviors>
+   </MouthSharkSub>
+   <EnterTerrainFood>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Terrain" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterTerrainFood>
+   <UseTerrainFood>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseTerrainFood>
+   <ExitTerrainFood>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitTerrainFood>
+   <EnterSubstratePile>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Terrain" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterSubstratePile>
+   <UseSubstratePile>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseSubstratePile>
+   <ExitSubstratePile>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitSubstratePile>
+   <EnterBuoyLure>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterBuoyLure>
+   <UseBuoyLure>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseBuoyLure>
+   <ExitBuoyLure>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitBuoyLure>
+   <EnterArtificialReef>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterArtificialReef>
+   <UseArtificialReef>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseArtificialReef>
+   <ExitArtificialReef>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitArtificialReef>
+   <EnterFoodBox>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterFoodBox>
+   <UseFoodBox>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseFoodBox>
+   <ExitFoodBox>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitFoodBox>
+   <EnterMarineCarcass>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box" targetAnim="SwimSub_EatTear"/>
+      </behaviors>
+   </EnterMarineCarcass>
+   <UseMarineCarcass>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject attachEntity="s_prop" targetAnim="SwimSub_EatTear" targetNode="Dock_Attach" detachAction="killitem" container="foodprop" interruptFlag="true"/>
+      </behaviors>
+   </UseMarineCarcass>
+   <ExitMarineCarcass>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90"/>
+      </behaviors>
+   </ExitMarineCarcass>
+   <Poop>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop>
+   <Poop_Sick>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Idle"/>
+      </behaviors>
+   </Poop_Sick>
+   <OnLand>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Dying"/>
+      </behaviors>
+   </OnLand>
+   <EnterSealPreyDummy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locoSpeed="medium"/>
+      </behaviors>
+   </EnterSealPreyDummy>
+   <UseSealPreyDummy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWhap targetAnim="SwimSub_Bite" interruptFlag="true"/>
+      </behaviors>
+   </UseSealPreyDummy>
+   <ExitSealPreyDummy>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitSealPreyDummy>
+   <EnterIceBlock>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Box"/>
+      </behaviors>
+   </EnterIceBlock>
+   <UseIceBlock>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehSetAttribute>
+            <BFAISubjectData hunger="-50"/>
+         </BFBehSetAttribute>         
+         <BFBehKill killTarget="true" fadeOutPeriod="1"/>
+         <BFBehAnimate targetAnim="Swim_BiteVicious" interruptFlag="true"/>
+      </behaviors>
+   </UseIceBlock>
+   <ExitIceBlock>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_TurnLeft90"/>
+      </behaviors>
+   </ExitIceBlock>
+   <ChasePrey>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPursuit hitRadius="10" pursuitRadius="30" locoSpeed="stalk"/>
+      </behaviors>
+   </ChasePrey> 
+   <MissPrey>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Chew"/>
+      </behaviors>
+   </MissPrey> 	
+   <AttackPrey>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </AttackPrey>
+   <Roar>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <ChargeChomp weight="25"/>
+               <Bite weight="25"/>
+               <InvestigativeBite weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </Roar> 
+   <SwipeMed>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="SwipeMed_Water"/>
+               <underwater behSet="SwipeMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </SwipeMed>
+   <SwipeMed_Water>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_BiteLungeVicious weight="50"/>
+               <Charge_ChompA weight="25"/>
+               <Charge_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Water>
+   <SwipeMed_Underwater>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_BiteLungeVicious weight="50"/>
+               <ChargeSub_ChompA weight="25"/>
+               <ChargeSub_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </SwipeMed_Underwater> 
+   <HitMediumEqual>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <HitMed weight="50"/>
+               <HitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </HitMediumEqual>
+   <HitMed>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </HitMed>
+   <HitMed_Ground>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <OnLand_Twitch weight="75"/>
+               <OnLand_Dying weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Ground> 
+   <HitMed_Water>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_TurnLeft90 weight="40"/>
+               <Swim_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Water> 
+   <HitMed_Underwater>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_TurnLeft90 weight="40"/>
+               <SwimSub_TurnRight90 weight="40"/>
+               <SwimSub_Turn180 weight="10"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </HitMed_Underwater> 
+   <HitMedDie>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>         
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </HitMedDie> 
+   <BiteMed>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="BiteMed_Water"/>
+               <underwater behSet="BiteMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehFollowEntity locoSpeed="attack" subjectNode="Node_Predator" targetNode="Node_Attacked" minPlayTime="20" maxPlayTime="30"/>
+      </behaviors>
+   </BiteMed>
+   <BiteMed_Water>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <Swim_BiteLungeVicious weight="50"/>
+               <Charge_ChompA weight="25"/>
+               <Charge_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Water>
+   <BiteMed_Underwater>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimateRandom>
+            <randomAnims>
+               <SwimSub_BiteLungeVicious weight="50"/>
+               <ChargeSub_ChompA weight="25"/>
+               <ChargeSub_ChompB weight="25"/>
+            </randomAnims>
+         </BFBehAnimateRandom>
+      </behaviors>
+   </BiteMed_Underwater> 
+   <BitMediumEqual>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <BitMed weight="50"/>
+               <BitMedDie weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </BitMediumEqual>
+   <BitMed>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="HitMed_Ground"/>
+               <water behSet="HitMed_Water"/>
+               <underwater behSet="HitMed_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </BitMed>
+   <BitMedDie>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:Killed"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <ZTBehViewEvent viewKey="Neg_10">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTMessageInfo locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" global="true" useEntityName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </BitMedDie> 
+   <WaitFight>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </WaitFight> 
+   <DockFight>
+      <subjects>
+         <xenacanimg_Adult/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehDockSpline subjectNode="p_FightOffset" targetNode="p_FightOffset" targetAnim="SwimSub_Bite"/>
+      </behaviors>
+   </DockFight>
+   <DockFight2>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehPursuit hitRadius="2" pursuitRadius="20" locoSpeed="fast" pollFreq="0.1"/>
+         <BFBehAnimate targetAnim="Swim_Idle" loopFlag="true"/>
+      </behaviors>
+   </DockFight2>
+   <Fight>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <water behSet="Fight_Water"/>
+               <underwater behSet="Fight_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+      </behaviors>
+   </Fight>
+   <Fight_Water>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="Swim_BiteVicious"/>
+      </behaviors>
+   </Fight_Water>
+   <Fight_Underwater>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_BiteVicious"/>
+      </behaviors>
+   </Fight_Underwater>
+   <DefendEqual>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehRandomSet>
+            <randomSets>
+               <Fight weight="50"/>
+               <FightHurt weight="50"/>
+            </randomSets>
+         </BFBehRandomSet>
+      </behaviors>
+   </DefendEqual>
+   <FightHurt>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="Fight"/>
+         <ZTBehViewEvent viewKey="Neg_7">
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" global="false" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehViewEvent>
+         <BFBehSetAttribute>
+            <BFAISubjectData health="30"/>
+         </BFBehSetAttribute>
+      </behaviors>
+   </FightHurt>
+   <Die_Ground>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="OnLand_Twitch" />
+      </behaviors>
+   </Die_Ground> 
+   <Die_Water>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Water> 
+   <Die_Underwater>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehWander minPlayTime="3" maxPlayTime="5" avoidLand="true" locoSpeed="fast" minDepth="6" maxDepth="10" avoidEntityRadius="8">
+            <avoidEntityTypes>
+               <TrainingArea/>
+            </avoidEntityTypes>
+         </BFBehWander>
+      </behaviors>
+   </Die_Underwater> 
+   <DockAttacked>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+      </behaviors>
+   </DockAttacked>
+   <Attacked>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehLocoSwitchSet>
+            <behaviorTable>
+               <ground behSet="Die_Ground"/>
+               <water behSet="Die_Water"/>
+               <underwater behSet="Die_Underwater"/>
+            </behaviorTable>
+         </BFBehLocoSwitchSet>
+         <BFBehPlaySet behSet="Die_Fight"/>
+      </behaviors>
+   </Attacked>
+   
+   <DockAttackGuest>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockNow subjectNode="Node_Eat" targetNode="Bip01" reserveSlotName="general" redock="true"/>
+      </behaviors>
+   </DockAttackGuest>
+   <AttackGuest>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAttachObject subjectNode="Node_Eat" targetNode="Bip01" detachAction="dropitem" targetBehSet="Attackedxenacanimg"/>
+         <BFBehAnimate targetAnim="Charge_FrenzyA" interruptFlag="true" />
+         <BFBehDetachObject detachAction="dropitem"/>
+      </behaviors>
+   </AttackGuest>
+   
+   <EnterBubbleEmitter>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterBubbleEmitter>
+   <UseBubbleEmitter>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180" interruptFlag="true"/>
+      </behaviors>
+   </UseBubbleEmitter>
+   <ExitBubbleEmitter>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Turn180"/>
+      </behaviors>
+   </ExitBubbleEmitter>
+   <EnterPirateMast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateMast>
+   <UsePirateMast>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateMast>
+   <EnterPirateShip>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehDockSpline subjectNode="Node_Mouth" locospeed="medium"/>
+      </behaviors>
+   </EnterPirateShip>
+   <UsePirateShip>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_Ahead" interruptFlag="true"/>
+      </behaviors>
+   </UsePirateShip> 
+   <ExitPirateShipPort>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnRight90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipPort> 
+   <ExitPirateShipStarboard>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimate targetAnim="SwimSub_TurnLeft90" interruptFlag="true"/>
+      </behaviors>
+   </ExitPirateShipStarboard> 
+   <LoopIdle>
+      <subjects>
+         <xenacanimg/>
+      </subjects>
+      <behaviors>
+         <BFBehAnimSwitchSet loopFlag="true">
+            <behaviorTable>
+               <Swim behSet="WanderSurf_Slow"/>
+               <SwimSub behSet="WanderSurf_Slow"/>
+               <default behSet="WanderSurf_Slow"/>
+            </behaviorTable>
+         </BFBehAnimSwitchSet>
+      </behaviors>
+   </LoopIdle>
+</BehaviorSets>

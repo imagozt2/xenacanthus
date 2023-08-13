@@ -1,0 +1,128 @@
+﻿<ZT2Strings>
+<entityname>
+   <!--animal names-->
+      <xenacanimg>Xenacanthus</xenacanimg>
+      <xenacanimg_stt>Xenacanthus</xenacanimg_stt>
+      <xenacanimg_lower>the Xenacanthus</xenacanimg_lower>
+      <xenacanimg_ltt>
+         <color r="255" g="248" b="178">
+            <b>Xenacanthus</b>
+         </color>
+         <br/>
+         Click to place a Xenacanthus.
+      </xenacanimg_ltt>
+      <!--gift names-->
+      <xenacanimg_Gift>Xenacanthus</xenacanimg_Gift>
+      <xenacanimg_Gift_stt>Xenacanthus</xenacanimg_Gift_stt>
+      <xenacanimg_Gift_lower>the Xenacanthus</xenacanimg_Gift_lower>
+      <xenacanimg_Gift_ltt>
+         <color r="255" g="248" b="178">
+            <b>Xenacanthus</b>
+         </color>
+         <br/>.
+      </xenacanimg_Gift_ltt>
+</entityname>
+<zoopedia_xenacanimg>
+ <entry>Xenacanthus</entry>
+ <text>
+  <cell pady="0" width="1000"/>
+  <p/>
+  <cell width="260"/>
+  <cell width="640" height="320" bgimg="ui/zoopedia/topCellBg.dds">
+   <cell width="600" padx="20" pady="20">
+   
+               <cell width="284">
+						 <cell width="96" bgimg="ui/zoopedia/littleBox-128.tga">
+						  <img src="entities/units/animals/xenacanimg/xenacanimg_Adult_F_icon.dds" sx="0" sy="0" sw="64" sh="64" height="96" width="96"/>
+						 </cell>
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_male.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>
+						 <cell width="16">
+						  <img src="ui/zoopedia/icon_female.dds" sx="0" sy="0" sw="64" sh="64" width="16" height="16"/>
+						 </cell>
+						 <cell width="156"/>
+                  <br/>   
+                  <cell width="32" pady="0">               
+                     <img src="ui/zoopedia/extinct.dds" sx="0" sy="0" sw="64" sh="64" width="32" height="32"/>
+                  </cell>                 
+                  <cell width="224" padx="10" pady="0">
+                     <color r="255" g="255" b="255">
+                     Conservation Status: 
+                     <br/>
+                        <color r="255" g="255" b="255">
+                     Extinct
+                        </color>
+                     </color>                  
+                  </cell>
+               </cell>   
+   
+    <cell width="128">
+     <color r="255" g="255" b="255">Freshwater<br/></color>
+     <img src="ui/icon_biomes/icon_wetlands.dds" sx="0" sy="0" sw="128" sh="128" width="96" height="96"/>
+    </cell>
+    <cell width="128">
+     <color r="255" g="255" b="255">Lakes<br/></color> 
+     <img src="ui/icon_maplocations/wetlands_worldwide.dds" sx="0" sy="0" sw="256" sh="256" width="96" height="96"/>
+    </cell>
+    <br/>
+    <cell width="284" pady="10">
+     <color r="255" g="255" b="255">Class: Cartilaginous fish <i>(Chondricthyes)</i><br/>Order: Sharks <i>(Xenacanthiformes)</i><br/>Family: <i>Xenacanthidae</i><br/>Genus: <i>Xenacanthus</i><br/>Species: <i>X. Moorei</i>
+     </color>
+    </cell>
+    <cell width="256" pady="10">
+     <img src="UI/zoopedia/biome/wetlands_zoopedia_biomebrush.dds" sx="0" sy="0" sw="256" sh="85"/>
+    </cell>
+   </cell>
+  </cell>
+  <p/>
+  <p/>
+  <cell width="260"/>
+  <cell width="300">
+   <cell width="64">
+    <img src="ui/zoopedia/fact-icon64.tga" sx="0" sy="0" sw="64" sh="64"/>
+   </cell>
+   <cell width="176">
+    <color r="255" g="255" b="255">
+     <font name="arial" size="12" shadowx="2" shadowy="1" shadowa="50">Fun Xenacanthus Facts</font>
+    </color>
+   </cell>
+   <p/>
+   <cell width="280" bgimg="ui/zoopedia/factBG.tga" padx="10">
+    <p/>
+    <cell width="32" pady="10">
+     <img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+    </cell>
+    <cell width="202" pady="10">
+     <color r="255" g="255" b="255">Xenacanthus can measure 75 cm to 1 m.</color>
+    </cell>
+	<cell width="32" pady="10">
+		<img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+	</cell>    
+    <cell width="202" pady="10">
+     <color r="255" g="255" b="255">It was a freshwater shark.</color>
+    </cell>
+	<cell width="32" pady="10">
+		<img src="ui/zoopedia/fact-bullet.tga" sx="0" sy="0" sw="32" sh="32"/>
+	</cell>        
+    <cell width="202" pady="10">
+     <color r="255" g="255" b="255">From the Carboniferous to the Triassic have lived 20 species of Xenacanthus.</color>
+       
+    </cell>
+  </cell>
+  </cell>
+  <cell width="340">
+   <color r="255" g="248" b="178">
+    To unlock the Xenacanthus in challenge or campaign games, you must earn a 3 star zoo fame rating for your zoo. 
+   </color>
+<p/>Xenacanthus is a genus of prehistoric sharks. The first species of the genus lived in the later Devonian period, and they survived until the end of the Triassic, 202 million years ago. Fossils of various species have been found worldwide. Xenacanthus had a number of features that distinguished it from modern sharks. This freshwater shark was about one meter (three feet) in length. The dorsal fin was ribbon-like and ran the entire length of the back and round the tail, where it joined with the anal fin. This arrangement resembles that of modern conger eels, and Xenacanthus probably swam in a similar manner. A distinctive spine projected from the back of the head, and gives the genus its name. The teeth had an unusual V-shape, and it probably fed on small crustaceans, and heavily scaled palaeoniscid fishes. As in all fossil sharks, Xenacanthus is mainly known because of fossilised teeth and spines.
+
+</cell>
+  <p/>
+  <cell width="260"/>
+  <cell width="620">
+   Information from <color r="255" g="231" b="135">Wikipedia and other sites</color>Imago<color r="0" g="0" b="0"></color>
+  </cell>
+ </text>
+</zoopedia_xenacanimg>
+</ZT2Strings>

@@ -1,0 +1,36 @@
+<BFTypedBinder binderType="xenacanimg_Young_F">
+   <types>
+      <entity>
+         <actor>
+            <animal>
+               <Chondrichthyes>
+                  <Carcharhiniformes>
+                     <Carcharhinidae>
+                        <xenacanimg>
+                           <xenacanimg_Young>
+                              <xenacanimg_Young_F/>
+                           </xenacanimg_Young>
+                        </xenacanimg>
+                     </Carcharhinidae>
+                  </Carcharhiniformes>
+               </Chondrichthyes>
+            </animal>
+         </actor>
+      </entity>
+   </types>
+   <instance>
+      <BFGEntity/>
+   </instance>
+   <shared>
+      <UIToggleButton template="adopt">
+         <UIAspect>
+            <default image="entities\units\animals\xenacanimg\xenacanimg_Adult_F_icon.dds"/>
+         </UIAspect>
+         <on>
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="xenacanimg_Young_F"/>
+         </on>
+      </UIToggleButton>
+      <BFAIEntityDataShared b_Male="0"/>
+   </shared>
+   <binder/>
+</BFTypedBinder>

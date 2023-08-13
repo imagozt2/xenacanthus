@@ -1,0 +1,32 @@
+<BehaviorSets>
+   <BuyxenacanimgGift>
+      <subjects>
+         <Guest/>
+      </subjects>
+      <behaviors>
+         <BFBehPlaySet behSet="DockGiftCart"/>
+         <BFBehAttachObject attachEntity="xenacanimg_Gift" subjectNode="Bip01 Head" detachAction="inventory" container="head_inventory"/>
+         <BFBehAnimate targetAnim="Stand_Turn180"/>
+      </behaviors>
+   </BuyxenacanimgGift>
+   <Attackedxenacanimg>
+      <subjects>
+         <Guest_Adult_M/>
+      </subjects>
+      <behaviors>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTActionInfo locID="guestactions:AttackedAnimal" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+         <BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Bip01} runps PlacementCloud"/>
+         <BFBehDockNow targetNode="p_AttackGuestNode" reserveSlotName="general"/>
+         <BFBehAnimate targetAnim="Attacked_Rhino"/>
+         <ZTBehFeedback>
+            <ZTFeedbackData>
+               <ZTThoughtInfo locID="guestthoughts:AttackedAnimal" priority="-1" timeout="60" global="true" useTargetName="true"/>
+            </ZTFeedbackData>
+         </ZTBehFeedback>
+      </behaviors>
+   </Attackedxenacanimg>
+</BehaviorSets>
